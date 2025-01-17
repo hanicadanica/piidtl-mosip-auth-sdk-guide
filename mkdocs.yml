@@ -1,0 +1,49 @@
+site_name: PIIDTL-MOSIP Authentication SDK Guide
+site_description: A step-by-step guide for using the MOSIP Authentication SDK
+site_author: Hannah Dungca
+nav:
+  - index.md
+  - Using the Auth SDK:
+    - Using the Auth SDK: using_the_auth_sdk/index.md
+    - Yes/No Authentication: using_the_auth_sdk/yes_no_authentication.md
+    - KYC Authentication: using_the_auth_sdk/kyc_authentication.md
+    - OTP Authentication: using_the_auth_sdk/otp_authentication.md
+  - Partner Onboarding: partner_onboarding.md
+theme:
+  icon:
+    logo: octicons/book-16
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - navigation.footer
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.expand
+    - navigation.indexes
+plugins:
+  - search
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
