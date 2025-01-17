@@ -2,13 +2,13 @@
 
 Before the Authentication SDK can be used, an authentication partner (you) must first be onboarded into the MOSIP system. This involves generating certificates, submitting them to MOSIP to be approved and signed, and receiving the signed certificates, a partner ID, and an API key.
 
-Details of the requirements can be found [here](https://docs.mosip.io/1.2.0/partners#authentication-partner-ap).
+Details of the requirements can be found [here](https://docs.mosip.io/1.2.0/partners#authentication-partner-ap){:target="_blank"}.
 
 ## Generating Certificates
 
 In order to be onboarded as a partner, partner certificates must be created and submitted to MOSIP who, in turn, will sign and return the certificates ready to be used for authentication.
 
-MOSIP has provided a Windows script for generating the required certificates, found [here](https://drive.google.com/drive/folders/1mNrTD1D7xf8QMHKSaDk0PWLSGSRHgxP_?usp=sharing). Change the appropriate attributes in `cert.properties` configuration file as needed, and make sure to have `npm` installed as it is needed by the script. Note that this script and the certificates it generates are to be used for testing only.
+MOSIP has provided a Windows script for generating the required certificates, found [here](https://drive.google.com/drive/folders/1mNrTD1D7xf8QMHKSaDk0PWLSGSRHgxP_?usp=sharing){:target="_blank"}. Change the appropriate attributes in `cert.properties` configuration file as needed, and make sure to have `npm` installed as it is needed by the script. Note that this script and the certificates it generates are to be used for testing only.
 
 Once the certificates have been generated in the `certs/` folder, obtain the `Client.pem`, `RootCA.pem`, and `keystore.p12` files. These are the certificates that have to be submitted to MOSIP.
 
@@ -18,7 +18,7 @@ After obtaining the necessary certificates, they have to be submitted to MOSIP i
 
 ### Via the Partner Management Portal
 
-Currently, MOSIP has a Partner Management Portal in their [Collab environment](https://collab.mosip.net/) where partners should be able to upload their certificates. Details on how to do so can be found [here](https://docs.mosip.io/1.2.0/collab-getting-started-guide/collab-pmp-guide) and [here](https://docs.mosip.io/1.2.0/modules/partner-management-services/pms-existing/auth-credential-partner).
+Currently, MOSIP has a Partner Management Portal in their [Collab environment](https://collab.mosip.net/){:target="_blank"} where partners should be able to upload their certificates. Details on how to do so can be found [here](https://docs.mosip.io/1.2.0/collab-getting-started-guide/collab-pmp-guide){:target="_blank"} and [here](https://docs.mosip.io/1.2.0/modules/partner-management-services/pms-existing/auth-credential-partner){:target="_blank"}.
 
 ### Via a Direct Email to MOSIP
 
@@ -38,7 +38,7 @@ The latter four items are used as-is in the Authentication SDK. The MOSIP-signed
 
 ### Preparing the Signed Keystore File
 
-For signing the keystore file, MOSIP recommends using [Keystore Explorer](https://keystore-explorer.org/).
+For signing the keystore file, MOSIP recommends using [Keystore Explorer](https://keystore-explorer.org/){:target="_blank"}.
 
 1. Download Keystore Explorer, open it, and select **Open an existing KeyStore**.
 2. Open the `keystore.p12` file and enter its password.

@@ -1,12 +1,12 @@
 # Auth SDK Guide
 
-This guide details the step-by-step of how to use the [MOSIP Authentication Python SDK](https://docs.mosip.io/1.2.0/modules/id-authentication-services/mosip-authentication-sdk).
+This guide details the step-by-step of how to use the [MOSIP Authentication Python SDK](https://docs.mosip.io/1.2.0/modules/id-authentication-services/mosip-authentication-sdk){:target="_blank"}.
 
 ## Pre-Requisites
 
-1. Download the MOSIP-signed certificate, the IDA partner certificate, and the keystore files [here](https://drive.google.com/drive/folders/1H72f30k_ubB5rReEHmYLE7n0tMFyUvd2?usp=sharing). These are the certificates returned by MOSIP after [partner onboarding](partner_onboarding.md). The password for the keystore files will be provided.
+1. Download the MOSIP-signed certificate, the IDA partner certificate, and the keystore files [here](https://drive.google.com/drive/folders/1H72f30k_ubB5rReEHmYLE7n0tMFyUvd2?usp=sharing){:target="_blank"}. These are the certificates returned by MOSIP after [partner onboarding](partner_onboarding.md). The password for the keystore files will be provided.
 
-2. Obtain a UIN to be used for testing out the SDK. For MOSIP's Collab environment, this can be done via [this Google form](https://docs.google.com/forms/d/e/1FAIpQLSc2I0CQqlYRIrEmcJ3J3tKlYOVNcYNj88YZe4MMwU2RZTrjOA/viewform). Otherwise, [this set of mock data](https://docs.esignet.io/try-it-out/using-mock-data) can also be used for testing.
+2. Obtain a UIN to be used for testing out the SDK. For MOSIP's Collab environment, this can be done via [this Google form](https://docs.google.com/forms/d/e/1FAIpQLSc2I0CQqlYRIrEmcJ3J3tKlYOVNcYNj88YZe4MMwU2RZTrjOA/viewform){:target="_blank"}. Otherwise, [this set of mock data](https://docs.esignet.io/try-it-out/using-mock-data){:target="_blank"} can also be used for testing.
 
 3. Install **Python** and **pip**.
 
@@ -82,4 +82,4 @@ The next sections show how to use the SDK for different types of authentication.
 
 ## More Information
 
-[MOSIP Auth SDK Configuration Parameters](https://mosip.atlassian.net/wiki/external/NjczOWRmMGQ0MzUxNGQ0OTgzYzg1MTk3ZGU2N2ExNjg)
+[MOSIP Auth SDK Configuration Parameters](https://mosip.atlassian.net/wiki/external/NjczOWRmMGQ0MzUxNGQ0OTgzYzg1MTk3ZGU2N2ExNjg){:target="_blank"}

@@ -42,7 +42,7 @@ Use `response.json()` to get the response, which would look something like this:
 
 ## Using the OTP in Authentication Requests
 
-To use OTPs in authentication requests, save the `transactionID` from the response in the OTP generation request detailed above. Input this along with the actual generated OTP into the `authenticator.auth()` or `authenticator.kyc()` method. For testing purposes, the OTP is always `111111` when using [mock data](https://docs.esignet.io/try-it-out/using-mock-data).
+To use OTPs in authentication requests, save the `transactionID` from the response in the OTP generation request detailed above. Input this along with the actual generated OTP into the `authenticator.auth()` or `authenticator.kyc()` method. For testing purposes, the OTP is always `111111` when using [mock data](https://docs.esignet.io/try-it-out/using-mock-data){:target="_blank"}.
 
 ``` python title="Using OTP in a KYC Auth Request" hl_lines="15 21-22"
 from mosip_auth_sdk import MOSIPAuthenticator

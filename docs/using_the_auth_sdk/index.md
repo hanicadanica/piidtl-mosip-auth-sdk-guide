@@ -1,6 +1,6 @@
 # Using the Auth SDK
 
-The MOSIP Authentication SDK can perform both yes/no and KYC authentications, with support for multi-factor authentication using biometrics, demographic data, and OTPs (see [Authentication Types](https://docs.mosip.io/1.2.0/id-authentication#authentication-types) for more information). In this guide, however, only demographic data and OTPs are used for yes/no and KYC authentication since a third-party SDK is needed to capture biometric data.
+The MOSIP Authentication SDK can perform both yes/no and KYC authentications, with support for multi-factor authentication using biometrics, demographic data, and OTPs (see [Authentication Types](https://docs.mosip.io/1.2.0/id-authentication#authentication-types){:target="_blank"} for more information). In this guide, however, only demographic data and OTPs are used for yes/no and KYC authentication since a third-party SDK is needed to capture biometric data.
 
 ## Auth SDK Example
 
