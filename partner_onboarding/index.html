@@ -608,15 +608,15 @@
 
 <h1 id="partner-onboarding">Partner Onboarding</h1>
 <p>Before the Authentication SDK can be used, an authentication partner (you) must first be onboarded into the MOSIP system. This involves generating certificates, submitting them to MOSIP to be approved and signed, and receiving the signed certificates, a partner ID, and an API key.</p>
-<p>Details of the requirements can be found <a href="https://docs.mosip.io/1.2.0/partners#authentication-partner-ap">here</a>.</p>
+<p>Details of the requirements can be found <a href="https://docs.mosip.io/1.2.0/partners#authentication-partner-ap" target="_blank">here</a>.</p>
 <h2 id="generating-certificates">Generating Certificates</h2>
 <p>In order to be onboarded as a partner, partner certificates must be created and submitted to MOSIP who, in turn, will sign and return the certificates ready to be used for authentication.</p>
-<p>MOSIP has provided a Windows script for generating the required certificates, found <a href="https://drive.google.com/drive/folders/1mNrTD1D7xf8QMHKSaDk0PWLSGSRHgxP_?usp=sharing">here</a>. Change the appropriate attributes in <code>cert.properties</code> configuration file as needed, and make sure to have <code>npm</code> installed as it is needed by the script. Note that this script and the certificates it generates are to be used for testing only.</p>
+<p>MOSIP has provided a Windows script for generating the required certificates, found <a href="https://drive.google.com/drive/folders/1mNrTD1D7xf8QMHKSaDk0PWLSGSRHgxP_?usp=sharing" target="_blank">here</a>. Change the appropriate attributes in <code>cert.properties</code> configuration file as needed, and make sure to have <code>npm</code> installed as it is needed by the script. Note that this script and the certificates it generates are to be used for testing only.</p>
 <p>Once the certificates have been generated in the <code>certs/</code> folder, obtain the <code>Client.pem</code>, <code>RootCA.pem</code>, and <code>keystore.p12</code> files. These are the certificates that have to be submitted to MOSIP.</p>
 <h2 id="submitting-certificates-to-mosip">Submitting Certificates to MOSIP</h2>
 <p>After obtaining the necessary certificates, they have to be submitted to MOSIP in order to be onboarded as an authentication partner.</p>
 <h3 id="via-the-partner-management-portal">Via the Partner Management Portal</h3>
-<p>Currently, MOSIP has a Partner Management Portal in their <a href="https://collab.mosip.net/">Collab environment</a> where partners should be able to upload their certificates. Details on how to do so can be found <a href="https://docs.mosip.io/1.2.0/collab-getting-started-guide/collab-pmp-guide">here</a> and <a href="https://docs.mosip.io/1.2.0/modules/partner-management-services/pms-existing/auth-credential-partner">here</a>.</p>
+<p>Currently, MOSIP has a Partner Management Portal in their <a href="https://collab.mosip.net/" target="_blank">Collab environment</a> where partners should be able to upload their certificates. Details on how to do so can be found <a href="https://docs.mosip.io/1.2.0/collab-getting-started-guide/collab-pmp-guide" target="_blank">here</a> and <a href="https://docs.mosip.io/1.2.0/modules/partner-management-services/pms-existing/auth-credential-partner" target="_blank">here</a>.</p>
 <h3 id="via-a-direct-email-to-mosip">Via a Direct Email to MOSIP</h3>
 <p>If the Partner Management Portal is unavailable or the certificates cannot be uploaded, it may also be possible to email MOSIP at <a href="mailto:getsupport&#64;mosip.io">getsupport@mosip.io</a> for manual partner onboarding.</p>
 <h2 id="after-successful-onboarding">After Successful Onboarding</h2>
@@ -630,7 +630,7 @@
 </ul>
 <p>The latter four items are used as-is in the Authentication SDK. The MOSIP-signed certificate, on the other hand, is used to sign the authentication partner's <code>keystore.p12</code> keystore file (as described in <a href="#generating-certificates">Generating Certificates</a>).</p>
 <h3 id="preparing-the-signed-keystore-file">Preparing the Signed Keystore File</h3>
-<p>For signing the keystore file, MOSIP recommends using <a href="https://keystore-explorer.org/">Keystore Explorer</a>.</p>
+<p>For signing the keystore file, MOSIP recommends using <a href="https://keystore-explorer.org/" target="_blank">Keystore Explorer</a>.</p>
 <ol>
 <li>Download Keystore Explorer, open it, and select <strong>Open an existing KeyStore</strong>.</li>
 <li>Open the <code>keystore.p12</code> file and enter its password.</li>
