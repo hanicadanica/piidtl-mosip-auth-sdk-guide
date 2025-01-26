@@ -80,6 +80,10 @@ pip install git+https://github.com/mosip/ida-auth-sdk.git@v0.9.0
 
 The next sections show how to use the SDK for different types of authentication.
 
+## What the Certificates are For
+
+The keystore file contains the partner's certificate (not yet signed by MOSIP) and private key. On the other hand, the signed keystore file contains the certificate that was signed by MOSIP, and this is what is used to sign the authentication requests. To encrypt authentication requests, the IDA Partner certificate (which also comes from MOSIP) is used.
+
 ## More Information
 
 [MOSIP Auth SDK Configuration Parameters](https://mosip.atlassian.net/wiki/external/NjczOWRmMGQ0MzUxNGQ0OTgzYzg1MTk3ZGU2N2ExNjg){:target="_blank"}
